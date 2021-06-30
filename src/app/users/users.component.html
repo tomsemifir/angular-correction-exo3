@@ -1,0 +1,10 @@
+<p>users works!</p>
+<div class="container">
+    <div class="element">
+        <app-user *ngFor="let user of users" [user]="user"></app-user>
+    </div>
+    <div class="element bis">
+        <app-user-form (inscription)="ajouterUser($event)"></app-user-form>
+    </div>
+</div>
+

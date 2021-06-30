@@ -1,0 +1,11 @@
+<div class="card text-center">
+    <div class="card-body">
+        <h5 class="card-title">
+          {{user.nom}} {{user.prenom}}
+        </h5>
+        <p class="card-text">{{user.adresse.num}} rue {{user.adresse.rue}} à {{user.adresse.ville}}</p>
+        <div class="container">
+          <button class="btn btn-warning" *ngFor="let chat of user.chats">{{chat.nom}}</button>
+        </div> 
+    </div>
+  </div>
